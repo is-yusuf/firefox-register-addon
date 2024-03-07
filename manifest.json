@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "registerer",
+  "version": "1.0",
+
+  "description": "to all webpages matching signupgenius",
+
+  "icons": {
+    "48": "icons/me.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.signupgenius.com/*"],
+      "js": ["ButtonChecker.js", "FormFiller.js", "Main.js"]
+    }
+  ]
+}
